@@ -55,12 +55,12 @@ badge:
 Find contract libraries for your programming language on wikipedia's
 [design-by-contract page](https://en.wikipedia.org/wiki/Design_by_contract#Language_support).
 
-Additionally, some of these tools may be useful for contractual SemVer specifically:
+Additionally, some of these tools may be useful for **contractual** SemVer:
 
 * [CrossHair (Python)](https://github.com/pschanely/CrossHair).
   Library authors can use CrossHair's symbolic execution engine to verify their contracts.
-  Library authors can ensure new minor and patch releases don't weaken contracts with the `diff_contracts` command.
   Library consumers can use CrossHair to automatically detect when they are dependent on implementation details.
+  See these [CrossHair docs](https://crosshair.readthedocs.io/en/latest/case_studies.html#contractual-semver) for more information.
 * (Make a pull request to add more ...)
 
 
