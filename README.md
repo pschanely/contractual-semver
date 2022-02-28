@@ -1,17 +1,27 @@
 # Contractual SemVer
 
-Contractual SemVer libraries distinguish,
-in a machine-readable format,
-which behaviors are guaranteed and which are implementation details.
+Libraries that follow
+[Semantic Versioning (SemVer)](https://semver.org/)
+increment major version numbers when backwards-incompatable changes are
+introduced.
+It does not say, however, how we are to interpret "backwards compatability."
 
-Contractual SemVer aims to more rigorously define SemVer's language about 
-"backwards compatability".
-
-Background links: [Semantic Versioning (SemVer)](https://semver.org/) and
+**Contractual** SemVer uses the idea of
 [Software contracts](https://en.wikipedia.org/wiki/Design_by_contract)
+to let authors rigorously define "backwards compatability" for their
+libraries.
 
 
 # Details
+
+Contracts are expressed in various ways, depending on the language and contract
+system.
+Wikipedia's
+[design-by-contract page](https://en.wikipedia.org/wiki/Design_by_contract#Language_support)
+contains contract systems for many popular programming languages.
+
+Contractual SemVar libraries use machine-understandable contracts when possible,
+but may fall back to natural language contracts as needed.
 
 Libraries may increment **minor** and **patch** versions when the contracts
 are not changed, or are **weakened**. Some examples:
@@ -21,11 +31,7 @@ are not changed, or are **weakened**. Some examples:
 
 A **major** version increment is needed when contracts are **strengthened**.
 
-The manner in which contracts are expressed may vary by language and contract
-library.
 
-Contractual SemVar libraries use machine-understandable contracts when possible,
-but may fall back to natural language contracts as needed.
 
 
 ## Benefits for library authors
