@@ -68,3 +68,10 @@ Additionally, some of these tools may be useful for **contractual** SemVer:
   Library consumers can use CrossHair to automatically detect when they are dependent on implementation details.
   See these [CrossHair docs](https://crosshair.readthedocs.io/en/latest/case_studies.html#contractual-semver) for more information.
 * (Make a pull request to add more ...)
+
+
+
+# Related Work
+
+* [tdver](https://github.com/abathur/tdverpy) supports a similar kind of versioning
+  rigor, but is based on test case changes rather than contracts.
